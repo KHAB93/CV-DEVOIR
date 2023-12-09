@@ -1,136 +1,156 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:ital,wght@1,300&display=swap');
+
+h1{
+  font-family: "Lato";
+  font-size: 1,5em;
+  padding-left: 2%;
+}
+
+h2{
+  font-family: "Lato";
+  color: black;
+  background-color: #dbc2a4;
+  padding-left: 2%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Raleway:ital,wght@1,300&display=swap');
+
+h3{
+  font-family: "Lato";
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("Fonts/Raleway-VariableFont_wght.woff");
+  src: url("Fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  src: url("Fonts/Raleway-Italic-VariableFont_wght.woff");
+  src: url("Fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+p{
+  font-family: "Raleway", serif;
+  padding-left: 2%;
+}
+
+li{
+  font-family: "Raleway", serif;
+}
+
+i{
+  font-family: "Raleway" serif;
+  font-style: normal;
+}
+
+#container__{
   width: 1160px;
   height: 1500px;
   background-color: #782221;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: 386px 386px 386px;
   grid-template-rows: 1fr 150px 100px 2fr 100px; 
   justify-content: start;
   align-content: start;
   margin: 100px auto;
-  
 }
 
+*{
+  box-sizing: border-box;
+}
 
-.item1
-{
-  grid-column: 1 / 4;
-  grid-row: 1/ 2;
-  justify-content: center; 
+#Header__{
   display: flex;
-  margin: 10px;
-  
- 
-}
-
-  .img{
-  position: absolute;
   justify-content: center;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  overflow: auto;
-  box-shadow: 0 0 30px #dbc2a4;
-  
-  }
-
-.item2 {
-  grid-column: 1 / 4;
-  text-align: center;
   align-items: center;
-  display: flex;
-  justify-content: center;
-  background-color: #782221;
-  color: #fff;
-  
-
-}
-
-h2{
-font-family: 'Raleway', sans-serif;
-}
-
-.item3 {
+  flex-direction: column;
   text-align: center;
-  background-color: #dbc2a4;
-  color: #fff;
- 
-}
-
-
-p{
-    font-family: 'Raleway', sans-serif;
-}
-
-
-
-.item4 {
-  text-align: center;
-  background-color: #dbc2a4;
-  color: #fff;
- 
-}
-
-.item5 {
-  text-align: center;
-  background-color: #dbc2a4;
-  color: #fff;
- 
-}
-
-
-.item6{
-  text-align: start;
-  background-color: #782221;
-  color: #fff;
   margin: 10px;
-
+  padding-top: 10px;
+  color: black;
 }
 
-.titre1{
-  background-color: #dbc2a4;
+figure{
+  width: 200px;
+  height: 200px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 30px #dbc2a4;
+}
+
+#Prénom__Nom{
   display: flex;
-  width: 300px;
-  color: black;
-  font-family: 'Lato', sans-serif;
-  }
+  flex-direction: column;
+  text-align: center;
+  background-color: #782221;
+  color: #fff;
+}
+
+#flex-row1__{
+  display: grid;
+  width: 1160px;
+  height:100px;
+  grid-template-columns: 386px 386px 386px;
+  flex-direction: column;
+  text-align: center;
+  background-color: #2c1d27;
+  color: #fff;
+}
+
+#Adresse__postale{
+  color: #fff;
+}
+
+#E__mail {
+  color: #fff;
+}
+
+#Numéro__téléphone{
+  color: #fff;
+}
+
+#flex-row2{
+display: flex;
+flex-direction: row;
+}
+
+#Préambule__{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  flex-basis: 40%;
+  background-color: #782221;
+  color: #fff;
+  padding-right: 3%;
+  text-align: justify;
+}
 
 
-.item7 {
-  grid-column: 2 / span 2;
+#Description__{
+  flex-basis: 70%;
   background-color: #fff;
-  
+  border-style: solid;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  color: black;
 }
 
-
-.titre2{
-  background-color: #dbc2a4;
-  display: flex;
-  width: 750px;
-  color: black;
-  font-family: 'Lato', sans-serif;
-  }
-
- 
-
-.item8 {
-  grid-column: 1 /4; 
+#social__{
   justify-content: center; 
   display: flex;
   margin: 10px;
-
-
 }
 
-.social img{
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    overflow: auto;
-    
+#social img{
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
   
